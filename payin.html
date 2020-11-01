@@ -197,7 +197,7 @@
                         <table class="table">
                             <thead class="table_head">
                                 <tr>
-                                    <th><input type="checkbox" name="check_all" id="check_all"></th>
+                                    <th><input type="checkbox" name="check_all" style="width: 17px; height: 17px;" id="check_all" onclick="myFunction()"></th>
                                     <th>Document Id</th>
                                     <th>Debtor</th>
                                     <th>Issued On</th>
@@ -208,7 +208,7 @@
                             </thead>
                             <tbody class="table_body">
                                 <tr>
-                                    <td><input type="checkbox" name="check" id="checkbox"></td>
+                                    <td><input type="checkbox" name="check" style="width: 17px; height: 17px;" id="checkbox" onclick="myFunction()"></td>
                                     <td><a href="#">12-GARN-025</a></td>
                                     <td>Thomas Sawyer</td>
                                     <td>20-08-2020 10:20 AM</td>
@@ -217,7 +217,7 @@
                                     <td>Issued</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" name="check" id="checkbox"></td>
+                                    <td><input type="checkbox" name="check" style="width: 17px; height: 17px;" id="checkbox" onclick="myFunction()"></td>
                                     <td><a href="#">12-GARN-045</a></td>
                                     <td>Attorney</td>
                                     <td>20-08-2020 10:20 AM</td>
@@ -226,7 +226,7 @@
                                     <td>Issued</td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" name="check" id="checkbox"></td>
+                                    <td><input type="checkbox" name="check" style="width: 17px; height: 17px;" id="checkbox" onclick="myFunction()"></td>
                                     <td><a href="#">12-GARN-019</a></td>
                                     <td>Judge</td>
                                     <td>20-08-2020 10:20 AM</td>
@@ -236,18 +236,259 @@
                                 </tr>
                                 
                             </tbody>
-                        </table>    
-                        
-                    </div> 
-                    <div class="footer">
-                        <div class="footer_btn">
-                            <button class="footer_cancel">Cancel</button>
-                            <button class="footer_save">Save</button>
-                        </div>
+                        </table><br><br>
+
+                        <div id="content" style="display: none;">
+
+                          <!-- Details Form Starts -->
+
+                          <h1 style="font-size: 16px; font-weight: bold; margin-left: 10px;"><span>Details</span></h1>
+                          <div class="flex-container">
+                            <div class="flex-item-left-1">
+                              <label>Document ID</label><br>
+                              <input type="text" name="" value="  12-GARN-025">
+                            </div>
+                            <div class="flex-item-left-2">
+                              <label>Case ID</label><br>
+                              <input type="text" name="" value="  LH-001-08">
+                            </div>
+                            <div class="flex-item-right-1">
+                              <label>Case Name</label><br>
+                              <input type="text" name="" value="  State vs Sawyer" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-right-2">
+                             
+                            </div>
+                          </div>
+
+                          <div class="flex-container">
+                            <div class="flex-item-left-1">
+                              <label>Status</label><br>
+                              <input type="text" name="" value="  Interrogateries Field" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-left-2">
+                              <label>Total Due</label><br>
+                              <input type="text" name="" value="  1,000.00" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-right-1">
+                              <label>Balance Due</label><br>
+                              <input type="text" name="" value="  1,000.00" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-right-2">
+                              <label>Amount on Deposit</label><br>
+                              <input type="text" name="" value="  1,000.00" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                          </div>
+
+                          <div class="flex-container">
+                            <div class="flex-item-left-1">
+                              <label>Debtor</label><br>
+                              <input type="text" name="" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-left-2">
+                              <label>Garnishee</label><br>
+                              <input type="text" name="" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-right-1">
+                              <label>Requestor</label><br>
+                              <input type="text" name="" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-right-2">
+                              <label>Attorney</label><br>
+                              <input type="text" name="" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                          </div>
+
+                          <!-- Details Form Ends -->
+
+                          <!-- Deposit Payments Form Starts -->
+                          <br><br><br>
+                          <h1 style="font-size: 16px; font-weight: bold; margin-left: 10px;"><span>Deposit Payment</span></h1>
+                          <div class="flex-container">
+                            <div class="flex-item-left-1">
+                              <label>Account Name</label><br>
+                              <input type="text" name="" value="  14-GARN003" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-left-2">
+                              <label>Account ID</label><br>
+                              <input type="text" name="" value="  State Vs Sawyer" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-right-1">
+                              <label>Account Type</label><br>
+                              <input type="text" name="" value="  Suspense Account" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                            </div>
+                            <div class="flex-item-right-2">
+                             
+                            </div>
+                          </div>
+
+                          <div class="flex-container">
+                            <div class="flex-item-left-1">
+                              <label>Payer ID</label><br>
+                              <input type="text" name="" value="  14-GARN003">
+                            </div>
+                            <div class="flex-item-left-2">
+                              <label>Name</label><br>
+                              <input type="text" name="" value="  Defended, Maggie 3" style="border-radius: 1px solid white; background-color: #dddddd;" readonly><br>
+                              <input type="checkbox" style="width: 17px; height: 17px;" id="organization" class="organization" name="org">
+                              <label for="organization">Organization</label>
+                            </div>
+                            <div class="flex-item-right-1">
+                              <label>Deposit Amount</label><br>
+                              <input type="text" name="" value="  0.00">
+                            </div>
+                            <div class="flex-item-right-2">
+                              <label>Amount on Deposit After</label><br>
+                              <input type="text" name="" value="  50.00" style="border-radius: 1px solid white; background-color: #dddddd;" readonly>
+                              <input type="checkbox" style="width: 17px; height: 17px;" class="auto" id="auto" name="payout" checked>
+                              <label for="auto">Include Automatic Payout</label>
+                            </div>
+                          </div>
+
+                          <br><br><br>
+                          <h1 style="font-size: 16px; font-weight: bold; margin-left: 10px;"><span>Payment Type</span></h1><br>
+                          <div class="flex-container">
+                            <div class="flex-item-left-1">
+                              <div style="display: flex;">
+                                 <input type="radio" style="width: 20px; height: 20px; margin-right: 10px;" name="payment" value="cheque" checked>
+                                  <label style="font-size: 14px; margin-top: 2px;">Cheque</label><br>
+                              </div>
+                            </div>
+                            <div class="flex-item-left-2">
+                               <div style="display: flex;">
+                                 <input type="radio" style="width: 20px; height: 20px; margin-right: 10px;" name="payment" value="creditcard">
+                                  <label style="font-size: 14px; margin-top: 2px;">Credit Card</label><br>
+                              </div>
+                            </div>
+                            <div class="flex-item-right-1">
+                               <div style="display: flex;">
+                                 <input type="radio" style="width: 20px; height: 20px; margin-right: 10px;" name="payment" value="moneyorder">
+                                  <label style="font-size: 14px; margin-top: 2px;">Money Order</label><br>
+                              </div>
+                            </div>
+                            <div class="flex-item-right-2">
+                               <div style="display: flex;">
+                                 <input type="radio" style="width: 20px; height: 20px; margin-right: 10px;" name="payment" value="voucher">
+                                  <label style="font-size: 14px; margin-top: 2px;">Voucher</label><br>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flex-container">
+                            <div class="flex-item-left-1">
+                              <label>Cheque No.</label><br>
+                              <input type="text" name="" placeholder=" Loreum">
+                            </div>
+                            <div class="flex-item-left-2">
+                              <label>Bank Name</label><br>
+                              <input type="text" name="" placeholder=" Loreum">
+                            </div>
+                            <div class="flex-item-right-1">
+                              <label>ROA Code</label><br>
+                              <input type="text" name="" placeholder=" Loreum">
+                            </div>
+                            <div class="flex-item-right-2">
+                              <label>Text</label><br>
+                              <input type="text" name="" placeholder=" Loreum">
+                            </div>
+                          </div>
+
+                          <div class="flex-container">
+                            <div class="flex-item-left-1">
+                              <label>Notes</label><br>
+                              <input type="text" style="width: 515px; height: 30px;" name="">
+                            </div>
+                          </div>
+
+                          <div class="flex-container">
+                            <div class="flex-item-left-1">
+                            </div>
+                            <div class="flex-item-left-2">
+                            </div>
+                            <div class="flex-item-right-1">
+                            </div>
+                            <div class="flex-item-right-2">
+                              <div style="margin-left: 100px;">
+                                <button style="width: 77px; height: 35px; background:transparent;">Cancel</button>
+                                <button style="width: 71px; height: 35px; background:#202340; color: white">Save</button>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <!-- Deposit Payments Form Ends -->
+
+
+
+                          <style type="text/css">
+                              .flex-container {
+                                    display: flex;
+                                    flex-direction: row;
+                                    font-size: 30px;
+                                    text-align: left;
+                                  }
+
+                                  .flex-item-left-1 {
+                                    background-color: transparent;
+                                    padding: 10px;
+                                    flex: 25%;
+                                  }
+
+                                  .flex-item-left-2 {
+                                    background-color: transparent;
+                                    padding: 10px;
+                                    flex: 25%;
+                                  }
+
+                                  .flex-item-right-1 {
+                                    background-color: transparent;
+                                    padding: 10px;
+                                    flex: 25%;
+                                  }
+                                   .flex-item-right-2 {
+                                    background-color: transparent;
+                                    padding: 10px;
+                                    flex: 25%;
+                                  }
+
+                                  label
+                                  {
+                                      font-size: 14px;
+                                  }
+
+                                  input
+                                  {
+                                      width: 285px;
+                                      height: 30px;
+                                  }
+
+                                  /* Responsive layout - makes a one column-layout instead of two-column layout */
+                                  @media (max-width: 800px) {
+                                    .flex-container {
+                                      flex-direction: column;
+                                    }
+                                  }
+                          </style>
+                		</div>
+
+                		<script type="text/javascript">
+
+                            function myFunction() {
+                            // Get the checkbox
+                            var checkBox = document.getElementById("checkbox");
+                            // Get the output text
+                            var text = document.getElementById("content");
+
+                            // If the checkbox is checked, display the output text
+                            if (checkBox.checked == true){
+                              text.style.display = "block";
+                            } else {
+                              text.style.display = "none";
+                            }
+                          }
+                		</script>    
                     </div>
-
                 </div>
-
             </div>
         </main>
 
