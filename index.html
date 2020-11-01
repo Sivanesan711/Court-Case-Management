@@ -4,11 +4,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Cogent</title>
-    <link rel="stylesheet" href="../Court Case Management System/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- FontAwesome 5 CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="stylesheet" href="css/index1updated.css">
+
+    <style>
+        body {
+            color: black;
+            background: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            text-decoration: black;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 2px solid #ddd;
+        }
+        
+        .homeTable th,
+        td {
+            text-align: left;
+            padding: 20px;
+        }
+        
+        .settings {
+            color: #0456A8;
+            padding-right: 15px;
+        }
+        
+        .delete {
+            color: #0456A8;
+            ;
+        }
+        
+        .delete i {
+            font-size: 19px;
+        }
+        
+        .settings {
+            font-size: 19px;
+        }
+        
+        .homeTable tr:nth-child(odd) {
+            background: #E8E8E8 0% 0% no-repeat padding-box;
+            ;
+        }
+        
+        .button {
+            background: #202340 0% 0% no-repeat padding-box;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            float: right;
+            margin-bottom: 10px;
+        }
+        
+        .button:hover,
+        .button:focus {
+            color: white;
+        }
+        
+        .buttton span {
+            float: left;
+            margin-top: 2px;
+        }
+        
+        table.homeTable tr th,
+        table.homeTable tr td {
+            border-color: #E8E8E8 0% 0% no-repeat padding-box;
+            padding: 12px 15px;
+            vertical-align: middle;
+        }
+        
+        .homeTable tr th:first-child {
+            width: 60px;
+        }
+        
+        .homeTable tr th:last-child {
+            width: 60px;
+        }
+        
+        .homeTable tbody tr:nth-of-type(odd) {
+            background-color: white;
+        }
+        
+        .homeTable.tbody tr:hover {
+            background: blue;
+        }
+        
+        .dropdown-menu {
+            padding: 20px;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .dropdown-menu:hover,
+        .dropdown-menu:focus {
+            background-color: whitesmoke;
+        }
+        
+        .dropdown-menu {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-weight: 20px;
+            font-size: 17px;
+        }
+        
+        .dropdown-menu a:hover {
+            background-color: #ddd;
+        }
+        
+        .homeTable td a {
+            font-weight: bold;
+            /* color: blue; */
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .homeTable td a:hover {
+            background-color: #ddd;
+        }
+        
+        .show {
+            display: block !important;
+        }
+        
+        body {
+            font-family: "arial", sans-serif;
+            font-size: 17px;
+            padding: 8px;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        row {
+            display: -ms-flexbox;
+            display: flex;
+            /* -ms-flex-wrap: wrap; */
+            margin: 0 -10px;
+        }
+        
+        .row1 {
+            margin-left: 30%;
+        }
+        
+        .col-50 {
+            flex: 50%;
+            -ms-flex: 50%;
+            padding: 0 20px;
+        }
+        
+        .col-51 {
+            flex: 50%;
+            -ms-flex: 50%;
+            padding: 0 16px;
+            margin-left: 10px;
+        }
+        
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            min-width: 160px;
+            z-index: 1;
+            overflow: auto;
+        }
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            right: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+        }
+        
+        .modal-content {
+            position: relative;
+            background-color: white;
+            margin-left: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 500px;
+            height: 100vh;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animateLeftToRight;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animateLeftToRight;
+            animation-duration: 0.4s
+        }
+        
+        @-webkit-keyframes animateLeftToRight {
+            from {
+                right: -300px;
+                opacity: 0
+            }
+            to {
+                right: 0;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animateLeftToRight {
+            from {
+                right: -300px;
+                opacity: 0
+            }
+            to {
+                right: 0;
+                opacity: 1
+            }
+        }
+        
+        .close {
+            color: black;
+            float: right;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: blue;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-header {
+            padding: 2px 16px;
+            color: white;
+        }
+        
+        .modal-body {
+            padding: 2px 16px;
+        }
+        
+        .modal-footer {
+            padding: 2px 16px;
+            color: white;
+        }
+    </style>
+
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -114,7 +391,8 @@
             </li>
         </ul>
     </div>
-    <div class="toggle" onclick="toggleMenu()"></div>
+    <div class="toggle" style="margin-top: 10px; margin-left: 8px; background-color: transparent; position: fixed; " onclick="toggleMenu()"></div>
+    
 
     <!-- SIDE NAV BAR RESPONSIVE ENDS -->
 
@@ -127,7 +405,7 @@
                 <i class="fa fa-bars"></i>
             </div>
             <div class="navbar__left">
-                <a href="#"><img src="../Court Case Management System/assets/Cogent Logo.svg" alt="logo"></a>
+                <a href="#"><img src="assets/Cogent Logo.svg" alt="logo"></a>
             </div>
             <div class="navbar__right">
                 <a href="#">
@@ -154,13 +432,421 @@
         <!-- Main Content Starts -->
 
         <main>
-            <div class="main__container">
+            <div class="main__container" style="padding-right: 10px; padding-left: 15px;">
 
-                <!-- Whatever we have to design in this container -->
 
-                <!-- Main tag and main__container tag is responsive -->
+                <div style="text-align: left; background-color: white; padding: 5px;">
+                    <ul class="breadcrumb">
+				        <li><a href="#">Home</a></li>
+				        <li>Garnishment</li>
+				    </ul>
+				    <style type="text/css">
+				        ul.breadcrumb {
+				            padding: 10px 16px;
+				            list-style: none;
+				            background-color: white;
+				        }
+				        
+				        ul.breadcrumb li {
+				            display: inline;
+				            font-size: 18px;
+				        }
+				        
+				        ul.breadcrumb li+li:before {
+				            padding: 8px;
+				            color: black;
+				            content: "/\00a0";
+				        }
+				        
+				        ul.breadcrumb li a {
+				            color: #0275d8;
+				            text-decoration: none;
+				        }
+				        
+				        ul.breadcrumb li a:hover {
+				            color: #01447e;
+				            text-decoration: underline;
+				        }
+				    </style>
 
-                <!-- You can do your work in this field itself -->
+                    <br>
+
+                <nav class="navbar" style="box-shadow: 5px 5px 5px #00000029; display: flex;">
+                    <div class="nav_icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="navbar__left" style="display: flex;">
+                        <a href="#"><i class="fa fa-search fa-lg" aria-hidden="true" style="margin-top: 10px;color: grey;"></i></a>
+                        <input type="text" placeholder="Search" style="width: 500px; height: 30px; border:none;">
+                    </div>
+                    <div class="navbar__right">
+                        <a href="#" style="color: black; margin-right: 5px; font-size: 12px;">
+                            Case ID  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <a href="#" style="color: black; margin-right: 5px; font-size: 12px;">
+                            Case  <i class="fa fa-caret-down"></i>
+                        </a>
+                        <a href="#" style="color: black; margin-right: 5px; font-size: 12px;">
+                            Issue Date  <i class="fa fa-calendar-o"></i>
+                        </a>
+                        <a href="#" style="color: black; margin-right: 5px; font-size: 12px;">
+                            Status  <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+
+                <br>
+
+
+                <h2>All Garnishment</h2>
+                <div class="header" style="margin-left:75%;margin-top: -20px; font-size: 14px; display: flex;">
+                    <h3 style="margin-right: 10px;"><b>Filter by</b></h3>
+                    <a href="#" class="button" style="font-size: 14px; margin-bottom: 10px; margin-top: -15px;"> <span>Add New Garnishment</span></a>
+                </div>
+    
+
+    <table class="homeTable" style="font-size: 14px; background-color: white;">
+        <thead>
+            <tr>
+                <th><input type="checkbox" name="select_all"></th>
+                <!-- <div class="main_table">
+                    <th><input type="checkbox" name="name1" /></th> -->
+                <th>Document Id</th>
+                <th>Case ID</th>
+                <th>Debatore Name</th>
+                <th>Total due</th>
+                <th>Issued Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                <th>Active</th>
+                <th></th>
+                </div>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="select"></td>
+                <td>
+                    <a href="" style="color:#0456A8;text-decoration: underline;">CR-10-GrpA-012</a>
+                </td>
+                <td>LH-0D1-08</td>
+                <td><a href="" style="color:#0456A8;text-decoration: underline;">State vs Sawer</td>
+         <td>0.00</td>
+        <td>01-08-2020 10.15 AM</td>
+        <td>01-09-2020 09.15 AM</td>
+        <td>Active</td>
+        <td>
+            <a href="#" class="settings" title="Edit" data-toggle="tooltip"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+
+                <td>
+                    <a href="#" data-toggle-dropdown-menu><i class="fa fa-ellipsis-v"></i></a>
+                    <ul class="dropdown-menu" style="margin-top:-5% ;margin-left:-180px;">
+                        <a href="transactions.html">Account Transactions</a>
+                        <a href="#">Payments</a></li>
+                        <a href="">Deposite to Account</a>
+                        <a href="#" data-show-payment-form>Deposite Payments</a>
+                        <a href="#">Payment History</a>
+                        <a href="#">Remove</a>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="select"></td>
+                <td>
+                    <a href="" style="color:#0456A8;text-decoration: underline;">CR-10-GrpA-012</a>
+                </td>
+                <td>LH-0D1-08</td>
+                <td><a href="" style="color:#0456A8;text-decoration: underline;">State vs Sawer</td>
+         <td>0.00</td>
+        <td>01-08-2020 10.15 AM</td>
+        <td>01-09-2020 09.15 AM</td>
+        <td>Active</td>
+        <td>
+            <a href="#" class="settings" title="Edit" data-toggle="tooltip"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+
+
+                <td>
+                    <a href="#" data-toggle-dropdown-menu><i class="fa fa-ellipsis-v"></i></a>
+                    <ul class="dropdown-menu" style="margin-top:-5% ;margin-left:-180px;">
+                        <a href="#">Account Transactions</a>
+                        <a href="#">Payments</a>
+                        <a href="">Deposite to Account</a>
+                        <a href="#" data-show-payment-form>Deposite Payments</a>
+                        <a href="#">Payment History</a>
+                        <a href="#">Remove</a>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="select"></td>
+                <td>
+                    <a href="" style="color:#0456A8;text-decoration: underline;">CR-10-GrpA-012</a>
+                </td>
+                <td>LH-0D1-08</td>
+                <td><a href="" style="color:#0456A8;text-decoration: underline;">State vs Sawer</td>
+         <td>0.00</td>
+        <td>01-08-2020 10.15 AM</td>
+        <td>01-09-2020 09.15 AM</td>
+        <td>Active</td>
+        <td>
+            <a href="#" class="settings" title="Edit" data-toggle="tooltip"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+
+                <td>
+                    <a href="#" data-toggle-dropdown-menu><i class="fa fa-ellipsis-v"></i></a>
+                    <ul class="dropdown-menu" style="margin-top:-5% ;margin-left:-180px;">
+
+
+                        <a href="#">Account Transactions</a>
+                        <a href="#">Payments</a>
+                        <a href="">Deposite to Account</a>
+                        <a href="#" data-show-payment-form>Deposite Payments</a>
+                        <a href="#">Payment History</a>
+                        <a href="#">Remove</a>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="select"></td>
+                <td>
+                    <a href="" style="color:#0456A8;text-decoration: underline;">CR-10-GrpA-012</a>
+                </td>
+                <td>LH-0D1-08</td>
+                <td><a href="" style="color:#0456A8;text-decoration: underline;">State vs Sawer</td>
+         <td>0.00</td>
+        <td>01-08-2020 10.15 AM</td>
+        <td>01-09-2020 09.15 AM</td>
+        <td>Active</td>
+        <td>
+            <a href="#" class="settings" title="Edit" data-toggle="tooltip"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+
+                <td>
+                    <a href="#" data-toggle-dropdown-menu><i class="fa fa-ellipsis-v"></i></a>
+                    <ul class="dropdown-menu" style="margin-top:-5% ;margin-left:-180px;">
+
+                        <a href="#">View Garnishment</a>
+                        <a href="#">Account Transactions</a>
+                        <a href="#">Payments</a>
+                        <a href="">Deposite to Account</a>
+                        <a href="#" data-show-payment-form>Deposite Payments</a>
+                        <a href="#">Payment History</a>
+                        <a href="#">Remove</a>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="select"></td>
+                <td>
+                    <a href="" style="color:#0456A8;text-decoration: underline;">CR-10-GrpA-012</a>
+                </td>
+                <td>LH-0D1-08</td>
+                <td><a href="" style="color:#0456A8;text-decoration: underline;">State vs Sawer</td>
+         <td>0.00</td>
+        <td>01-08-2020 10.15 AM</td>
+        <td>01-09-2020 09.15 AM</td>
+        <td>Active</td>
+        <td>
+            <a href="#" class="settings" title="Edit" data-toggle="tooltip"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+
+                <td>
+                    <a href="#" data-toggle-dropdown-menu><i class="fa fa-ellipsis-v"></i></a>
+                    <ul class="dropdown-menu" style="margin-top:-5% ;margin-left:-180px;">
+
+
+                        <a href="#">Account Transactions</a>
+                        <a href="#">Payments</a>
+                        <a href="">Deposite to Account</a>
+                        <a href="#" data-show-payment-form>Deposite Payments</a>
+                        <a href="#">Payment History</a>
+                        <a href="#">Remove</a>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="select"></td>
+                <td>
+                    <a href="" style="color:#0456A8;text-decoration: underline;">CR-10-GrpA-012</a>
+                </td>
+                <td>LH-0D1-08</td>
+                <td><a href="" style="color:#0456A8;text-decoration: underline;">State vs Sawer</td>
+         <td>0.00</td>
+        <td>01-08-2020 10.15 AM</td>
+        <td>01-09-2020 09.15 AM</td>
+        <td>Active</td>
+        <td>
+            <a href="#" class="settings" title="Edit" data-toggle="tooltip"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+
+                <td>
+                    <a href="#" data-toggle-dropdown-menu><i class="fa fa-ellipsis-v"></i></a>
+                    <ul class="dropdown-menu" style="margin-top:-5% ;margin-left:-180px;">
+
+                        <a href="#">Account Transactions</a>
+                        <a href="#">Payments</a>
+                        <a href="">Deposite to Account</a>
+                        <a href="#" data-show-payment-form>Deposite Payments</a>
+                        <a href="#">Payment History</a>
+                        <a href="#">Remove</a>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="select"></td>
+                <td>
+                    <a href="" style="color:#0456A8;text-decoration: underline;">CR-10-GrpA-012</a>
+                </td>
+                <td>LH-0D1-08</td>
+                <td><a href="" style="color:#0456A8;text-decoration: underline;">State vs Sawer</td>
+         <td>0.00</td>
+        <td>01-08-2020 10.15 AM</td>
+        <td>01-09-2020 09.15 AM</td>
+        <td>Active</td>
+        <td>
+            <a href="#" class="settings" title="Edit" data-toggle="tooltip"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+
+                <td>
+                    <a href="#" data-toggle-dropdown-menu><i class="fa fa-ellipsis-v"></i></a>
+                    <ul class="dropdown-menu" style="margin-top:-5% ;margin-left:-180px;">
+
+
+                        <a href="#">Account Transactions</a>
+                        <a href="#">Payments</a>
+                        <a href="">Deposite to Account</a>
+                        <a href="#" data-show-payment-form>Deposite Payments</a>
+                        <a href="#">Payment History</a>
+                        <a href="#">Remove</a>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="select"></td>
+                <td>
+                    <a href="" style="color:#0456A8;text-decoration: underline;">CR-10-GrpA-012</a>
+                </td>
+                <td>LH-0D1-08</td>
+                <td><a href="" style="color:#0456A8;text-decoration: underline;">State vs Sawer</td>
+         <td>0.00</td>
+        <td>01-08-2020 10.15 AM</td>
+        <td>01-09-2020 09.15 AM</td>
+        <td>Active</td>
+        <td>
+            <a href="#" class="settings" title="Edit" data-toggle="tooltip"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </td>
+
+                <td>
+                    <a href="#" data-toggle-dropdown-menu><i class="fa fa-ellipsis-v"></i></a>
+                    <ul class="dropdown-menu" style="margin-top:-5% ;margin-left:-180px;">
+
+
+                        <a href="#">Account Transactions</a>
+                        <a href="#">Payments</a>
+                        <a href="">Deposite to Account</a>
+                        <a href="#" data-show-payment-form>Deposite Payments</a>
+                        <a href="#">Payment History</a>
+                        <a href="#">Remove</a>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <br>
+                <a href="" onclick="close()"><span class="close">&times;</span></a>
+                <script type="text/javascript">
+                	function close()
+                	{
+                		location.replace("Ranjana.html");
+                	}
+                </script>
+                <h2 class="head" style="color:black;font-weight:20px;">Deposite To Account</h2>
+                <br><br>
+                <form action="/action_page.php">
+                    <label for="Account Id" style="color:black;">Account Id</label>
+                    <input type="text" id="aId" name="Account Id" placeholder="">
+                    <label for="Account Name" style="color:black;">Account Name</label>
+                    <input type="text" id="aName" name="AccountName" placeholder="">
+                    <label for="AccountType" style="color:black;">AccountType</label>
+                    <select id="Account" name="type">
+                   <option value="savings"></option>
+                      <option value="current">Current</option>
+                   <option value="deposite">Deposite</option>
+                      <option value="deposite">savings</option>
+                        </select>
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="Payer Id" style="color:black;">Payer Id</label>
+                            <input type="text" id="Pid" name="Payer Id" placeholder="Lorem">
+                        </div>
+                        <div class="col-50">
+                            <label for="Name" style="color:black;">Name</label>
+                            <input type="text" id="pName" name="payerName" placeholder="Lorem">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-51">
+                            <label for="Deposite Amount" style="color:black;">Deposite Amount</label>
+                            <input type="text" name="Payer Id" placeholder="0.00">
+                        </div>
+                        <div class="col-51">
+                            <label for="Account Balance" style="color:black;">Account Balance</label>
+                            <input type="text" name="balance" placeholder="325.00">
+                        </div>
+                    </div>
+
+                    <div class="row1">
+                        <div class="flex-container">
+                            <div class="flex-item-left-1">
+                            </div>
+
+                            <div class="flex-item-right-1">
+                                <div style="display: flex;">
+                                    <button style="width: 77px; height: 35px; background:transparent; margin-right: 20px;margin-top: 70px;">Cancel</button>
+                                    <button style="width: 71px; height: 35px; background:#202340; color: white;margin-top: 70px;">Save</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('[data-toggle-dropdown-menu]').click(function() {
+            // close all opened dropdown menu of any rows, if any
+            $('.dropdown-menu').removeClass('show');
+            $(this).parent('td').find('.dropdown-menu').addClass('show');
+        });
+
+        $('[data-show-payment-form]').click(function() {
+            $('#myModal').addClass('show');
+        });
+
+    </script>
+
+
 
             </div>
         </main>
@@ -186,11 +872,6 @@
 
 
 
-
-
-
-
-
-<script src="../Court Case Management System/js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

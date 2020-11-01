@@ -5,3 +5,4 @@ function toggleMenu()
     navigation.classList.toggle('active');
     toggle.classList.toggle('active');
 }
+

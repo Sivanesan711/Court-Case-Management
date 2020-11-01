@@ -148,6 +148,7 @@ body
     grid-template-areas:
         "sidebar nav nav nav"
         "sidebar main main main";
+    overflow: hidden;
 }
 
 .navbar {
@@ -231,7 +232,7 @@ main {
 }
 
 .main__container {
-    padding: 20px 30px;
+    padding: 20px 50px;
 }
 
 /* Main Container Ends */
