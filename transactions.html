@@ -234,20 +234,54 @@
                                 </tr>
                             </thead>
                             <tbody class="table_body">
-                                <tr class="table_row_active">
-                                    <td><input type="checkbox" name="check" id="checkbox"></td>
+                                <tr class="table_row active">
+                                    <td><input type="checkbox" name="check" id="checkbox" checked></td>
                                     <td><a href="#">12-GARN-025</a></td>
                                     <td>20 August 2020 Paid Out</td>
                                     <td>Thomas Sawyer</td>
                                     <td>CCJC-000040</td>
                                     <td>039381</td>
                                     <td><button class="table_active_btn">Active</button></td>
-                                    <td><div class="actions">
+                                    <td>
+                                        <div class="actions">
                                         <i class="fa fa-pencil-alt" style="color:rgba(4, 86, 168, 1);"></i>
                                         <i class="fa fa-trash-alt" style="color:rgba(4, 86, 168, 1);"></i>
                                         <i class="fa fa-ellipsis-v" style="color:#707070;"></i>
-                                    </div></td>
+                                        
+                                        </div>
+                                    </td>
                                 </tr>
+                                <tr class="table_row_hidden header">
+                                    <td></td>
+                                    <td>Summary</td>
+                                    <td>Payer/ Payee</td>
+                                    <td>Amount In</td>
+                                    <td>Amount Out</td>
+                                    <td>Assessed</td>
+                                    <td>Balance</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="table_row_hidden">
+                                    <td></td>
+                                    <td>Cost Fees</td>
+                                    <td>Horace Rumpole</td>
+                                    <td>100.00</td>
+                                    <td>0.00</td>
+                                    <td>999.30</td>
+                                    <td>499.70</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="table_row_hidden">
+                                    <td></td>
+                                    <td>Payable</td>
+                                    <td>Horace Rumpole</td>
+                                    <td>50.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>12.00</td>
+                                    <td></td>
+                                </tr>
+                                    
                                 <tr>
                                     <td><input type="checkbox" name="check" id="checkbox"></td>
                                     <td><a href="#">12-GARN-032</a></td>
@@ -259,7 +293,13 @@
                                     <td><div class="actions">
                                         <i class="fa fa-pencil-alt" style="color:rgba(4, 86, 168, 1);"></i>
                                         <i class="fa fa-trash-alt" style="color:rgba(4, 86, 168, 1);"></i>
-                                        <i class="fa fa-ellipsis-v" style="color:#707070;"></i>
+                                        <i class="fa fa-ellipsis-v action_menu" style="color:#707070;">
+                                            <div class="action_dropdown_list">
+                                                <div class="action_dropdown_listitem">Pay In</div>
+                                                <div class="action_dropdown_listitem active">Pay Out</div>
+                                                <div class="action_dropdown_listitem">Recipt Details</div>
+                                            </div>
+                                        </i>
                                     </div></td>
                                 </tr>
                             </tbody>
