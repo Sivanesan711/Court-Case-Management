@@ -165,7 +165,12 @@
                 <div class="popup">
                     <div class="popup_title">
                         <p class="popup_btext" style="font-size: 24px !important;" >Pay Out - Garnishment Payements</p>
-                        <i class="fa fa-times" style="color:#707070;font-size: larger;"></i>
+                        <i class="fa fa-times" style="color:#707070;font-size: larger; cursor: pointer;" onclick="transaction()"></i>
+                        <script type="text/javascript">
+                            function transaction(){
+                                location.replace("transactions.html");
+                            }
+                        </script>
                     </div>
 
                     <div class="popup_info">
