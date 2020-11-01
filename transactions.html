@@ -11,7 +11,7 @@
     <!-- FontAwesome 5 CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
-<body>
+<body onclick="deactivateDropDowns()">
 
     <!-- SIDE NAV BAR RESPONSIVE STARTS -->
 
@@ -246,12 +246,18 @@
                                         <div class="actions">
                                         <i class="fa fa-pencil-alt" style="color:rgba(4, 86, 168, 1);"></i>
                                         <i class="fa fa-trash-alt" style="color:rgba(4, 86, 168, 1);"></i>
-                                        <i class="fa fa-ellipsis-v" style="color:#707070;"></i>
-                                        
+                                        <i class="fa fa-ellipsis-v action_menu" style="color:#707070;" onclick="activateActionDropdown(event, 1)">
+                                            
+                                            <div id="action_dropdown_1" class="action_dropdown_list hidden">
+                                                <div class="action_dropdown_listitem"><a href="payin.html" style="text-decoration: none; color: black;">Pay In</a></div>
+                                                <div class="action_dropdown_listitem"><a href="payout.html" style="text-decoration: none; color: black;">Pay Out</a></div>
+                                                <div class="action_dropdown_listitem"><a href="" style="text-decoration: none; color: black;">Recipt Details</a></div>
+                                            </div>
+                                        </i>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="table_row_hidden header">
+                                <tr class="table_row header">
                                     <td></td>
                                     <td>Summary</td>
                                     <td>Payer/ Payee</td>
@@ -261,7 +267,7 @@
                                     <td>Balance</td>
                                     <td></td>
                                 </tr>
-                                <tr class="table_row_hidden">
+                                <tr class="table_row">
                                     <td></td>
                                     <td>Cost Fees</td>
                                     <td>Horace Rumpole</td>
@@ -271,7 +277,7 @@
                                     <td>499.70</td>
                                     <td></td>
                                 </tr>
-                                <tr class="table_row_hidden">
+                                <tr class="table_row">
                                     <td></td>
                                     <td>Payable</td>
                                     <td>Horace Rumpole</td>
@@ -293,10 +299,10 @@
                                     <td><div class="actions">
                                         <i class="fa fa-pencil-alt" style="color:rgba(4, 86, 168, 1);"></i>
                                         <i class="fa fa-trash-alt" style="color:rgba(4, 86, 168, 1);"></i>
-                                        <i class="fa fa-ellipsis-v action_menu" style="color:#707070;">
-                                            <div class="action_dropdown_list">
+                                        <i class="fa fa-ellipsis-v action_menu" style="color:#707070;" onclick="activateActionDropdown(event, 2)">
+                                            <div id="action_dropdown_2" class="action_dropdown_list hidden">
                                                 <div class="action_dropdown_listitem"><a href="payin.html" style="text-decoration: none; color: black;">Pay In</a></div>
-                                                <div class="action_dropdown_listitem active"><a href="payout.html" style="text-decoration: none; color: black;">Pay Out</a></div>
+                                                <div class="action_dropdown_listitem"><a href="payout.html" style="text-decoration: none; color: black;">Pay Out</a></div>
                                                 <div class="action_dropdown_listitem"><a href="" style="text-decoration: none; color: black;">Recipt Details</a></div>
                                             </div>
                                         </i>
@@ -349,7 +355,21 @@
         <!-- Main Content Ends -->
 
     </div>
-
-<script src="./js/main.js"></script>
+    <script>
+        function deactivateDropDowns(){
+            var listDiv = document.getElementsByClassName("action_dropdown_list");
+            for(div of listDiv){
+                div.classList.toggle("hidden", true);
+            }
+        }
+        function activateActionDropdown(event, id){
+            event.stopPropagation();
+            deactivateDropDowns();
+            var div = document.getElementById("action_dropdown_"+id);
+            div.classList.toggle("hidden");
+        }
+        
+    </script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

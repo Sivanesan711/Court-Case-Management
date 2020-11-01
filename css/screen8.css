@@ -62,9 +62,8 @@ i {
     background-color: #F6F6F6;
     display: inline-flex;
     justify-content: space-evenly;
-    padding: 20px;
-    padding-top: 0;
-    margin-top: 0px;
+    margin: 20px;
+    margin-top: 0;
     border-top: 1px solid #cfcfcf;
 }
 
@@ -111,7 +110,6 @@ i {
 }
 
 .viewbox_table > table {
-    position: relative;
     border-collapse: collapse;
     padding: 10px;
     width: 100%;
@@ -164,6 +162,10 @@ tr {
     border: 1px solid #C4BEBE;
 }
 
+.hidden{
+    display: none;
+}
+
 .action_dropdown_listitem {
     padding: 10px;
     color: #000000;
@@ -171,11 +173,11 @@ tr {
     font-weight: 500;
 }
 
-.action_dropdown_listitem.active {
+.action_dropdown_listitem:hover {
     background-color: #E8E8E8;
 }
 
-.table_row_hidden.header {
+.table_row.header {
     background-color: #E8E8E8;
 }
 
