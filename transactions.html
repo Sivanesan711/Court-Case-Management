@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Transactions | Cogent</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/screen8.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- FontAwesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+
+    <!-- SIDE NAV BAR RESPONSIVE STARTS -->
+
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-th-large" aria-hidden="true"></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                    <span class="title">Person</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+                    <span class="title">Courts</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-square" aria-hidden="true"></i></span>
+                    <span class="title">Citations</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-object-ungroup" aria-hidden="true"></i></span>
+                    <span class="title">Violations</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-server" aria-hidden="true"></i></span>
+                    <span class="title">Documents</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+                    <span class="title">Banking</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                    <span class="title">E-Hearing</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+                    <span class="title">Payments</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-money" aria-hidden="true"></i></span>
+                    <span class="title">Money</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-menorah" aria-hidden="true"></i></span>
+                    <span class="title">Facilities</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-hand-holding-usd" aria-hidden="true"></i></span>
+                    <span class="title">Garnishment</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-chalkboard-teacher" aria-hidden="true"></i></span>
+                    <span class="title">E-Hearing</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                    <span class="title">Witness Management</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-tasks" aria-hidden="true"></i></span>
+                    <span class="title">Jury Management</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa fa-bug" aria-hidden="true"></i></span>
+                    <span class="title">Reports</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="toggle" onclick="toggleMenu()"></div>
+
+    <!-- SIDE NAV BAR RESPONSIVE ENDS -->
+
+    <div class="container">
+
+        <!-- NAV BAR RESPONSIVE STARTS -->
+
+        <nav class="navbar">
+            <div class="nav_icon">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="navbar__left">
+                <a href="#"><img src="./assets/Cogent Logo.svg" alt="logo"></a>
+            </div>
+            <div class="navbar__right">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-calendar-o"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-bell"></i>
+                </a>
+                <a href="#">
+                    <h6>Sandra Johnson</h6>
+                    <h6 style="float: right;">Clerk</h6>
+                </a>
+                <a href="#" class="greencircle">
+                   <i class="fa fa-user" style="color: black; background-color: lightgreen;"></i>
+                </a>
+            </div>
+        </nav>
+
+        <!-- NAV BAR RESPONSIVE ENDS -->
+
+        <!-- Main Content Starts -->
+
+        <main>
+            <div class="main__container">
+
+                <!-- Whatever we have to design in this container -->
+
+                <!-- Main tag and main__container tag is responsive -->
+
+                <!-- You can do your work in this field itself -->
+                <div class="viewbox">
+                    <div class="viewbox_navigation">
+                        <a href="#" class="viewbox_text">Home</a>
+                        <i class="fa fa-chevron-right" style="color: #707070;"></i>
+                        <a href="#" class="viewbox_text">Garnishment</a>
+                        <i class="fa fa-chevron-right" style="color:#707070;"></i>
+                        <a href="#" class="viewbox_text active_text">Account Transactions</a>
+                    </div>
+
+                    <div class="viewbox_back">
+                        <i class="fa fa-arrow-left" style="color: #707070; font-size: large;"></i>
+                        <a href="#" class="viewbox_btext">Account Transactions</a>
+                    </div>
+
+                    <div class="viewbox_info">
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Document Id</p>
+                            <p class="viewbox_text">12-GARN-025</p>
+                        </div>
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Case Id</p>
+                            <p class="viewbox_text">LH-001-08</p>
+                        </div>
+                        
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Debtor</p>
+                            <p class="viewbox_text">Thomas Sawyer</p>
+                        </div>
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Garnishee</p>
+                            <p class="viewbox_text">Sameul L Clemens</p>
+                        </div>
+
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Requestor</p>
+                            <p class="viewbox_text">Horace Rumpole</p>
+                        </div>
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Attorney</p>
+                            <p class="viewbox_text">John Doe</p>
+                        </div>
+                    </div>
+
+                    <div class="viewbox_search">
+                        <form>
+                            <label for="search_input" class="viewbox_text">Search By <span style="color: red;">&#42;</span></label>
+                            <div class="viewbox_search_form">
+                                <select name="search_select" id="search_select">
+                                    <option value="all">All</option>
+                                    <option value="debtor">Debtor</option>
+                                </select>
+                                <input type="text" name="search_input" id="search_input" placeholder="Search" >
+                                <input id="search_submit" type="submit" value="Search">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="viewbox_table">
+                        <table class="table">
+                            <thead class="table_head">
+                                <tr>
+                                    <th><input type="checkbox" name="check_all" id="check_all"></th>
+                                    <th>Document Id</th>
+                                    <th>Summary</th>
+                                    <th>Debtor</th>
+                                    <th>Recipt No.</th>
+                                    <th>Check No.</th>
+                                    <th>Total Amount</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table_body">
+                                <tr class="table_row active">
+                                    <td><input type="checkbox" name="check" id="checkbox" checked></td>
+                                    <td><a href="#">12-GARN-025</a></td>
+                                    <td>20 August 2020 Paid Out</td>
+                                    <td>Thomas Sawyer</td>
+                                    <td>CCJC-000040</td>
+                                    <td>039381</td>
+                                    <td><button class="table_active_btn">Active</button></td>
+                                    <td>
+                                        <div class="actions">
+                                        <i class="fa fa-pencil-alt" style="color:rgba(4, 86, 168, 1);"></i>
+                                        <i class="fa fa-trash-alt" style="color:rgba(4, 86, 168, 1);"></i>
+                                        <i class="fa fa-ellipsis-v" style="color:#707070;"></i>
+                                        
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="table_row_hidden header">
+                                    <td></td>
+                                    <td>Summary</td>
+                                    <td>Payer/ Payee</td>
+                                    <td>Amount In</td>
+                                    <td>Amount Out</td>
+                                    <td>Assessed</td>
+                                    <td>Balance</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="table_row_hidden">
+                                    <td></td>
+                                    <td>Cost Fees</td>
+                                    <td>Horace Rumpole</td>
+                                    <td>100.00</td>
+                                    <td>0.00</td>
+                                    <td>999.30</td>
+                                    <td>499.70</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="table_row_hidden">
+                                    <td></td>
+                                    <td>Payable</td>
+                                    <td>Horace Rumpole</td>
+                                    <td>50.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>12.00</td>
+                                    <td></td>
+                                </tr>
+                                    
+                                <tr>
+                                    <td><input type="checkbox" name="check" id="checkbox"></td>
+                                    <td><a href="#">12-GARN-032</a></td>
+                                    <td>20 May 2020 Paid In</td>
+                                    <td>Thomas Sawyer</td>
+                                    <td>CCJC-000040</td>
+                                    <td>039381</td>
+                                    <td><button class="table_active_btn">Active</button></td>
+                                    <td><div class="actions">
+                                        <i class="fa fa-pencil-alt" style="color:rgba(4, 86, 168, 1);"></i>
+                                        <i class="fa fa-trash-alt" style="color:rgba(4, 86, 168, 1);"></i>
+                                        <i class="fa fa-ellipsis-v action_menu" style="color:#707070;">
+                                            <div class="action_dropdown_list">
+                                                <div class="action_dropdown_listitem">Pay In</div>
+                                                <div class="action_dropdown_listitem active">Pay Out</div>
+                                                <div class="action_dropdown_listitem">Recipt Details</div>
+                                            </div>
+                                        </i>
+                                    </div></td>
+                                </tr>
+                            </tbody>
+                        </table>    
+                        
+                    </div>
+                    <div class="viewbox_info">
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Total Due</p>
+                            <p class="viewbox_text">999.56</p>
+                        </div>
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Total Paid In</p>
+                            <p class="viewbox_text">250.00</p>
+                        </div>
+                        
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Total Paid Out</p>
+                            <p class="viewbox_text">0.00</p>
+                        </div>
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Amount on Deposit</p>
+                            <p class="viewbox_text">1189.56</p>
+                        </div>
+
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Balance Due</p>
+                            <p class="viewbox_text">1189.56</p>
+                        </div>
+                        <div class="viewbox_info_col">
+                            <p class="viewbox_lighttext">Total Adjustments</p>
+                            <p class="viewbox_text">1189.56</p>
+                        </div>
+                    </div> 
+                    <div class="footer">
+                        <div class="footer_btn">
+                            <button class="footer_cancel">Cancel</button>
+                            <button class="footer_save">Save</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Main Content Ends -->
+
+    </div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
