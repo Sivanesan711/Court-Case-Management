@@ -1,0 +1,178 @@
+.calculate-amount {
+	height: 170vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 150;
+}
+.calculate-amount-popup {
+	height: 100%;
+	width: 84%;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	top: 0;
+	box-shadow: -8px 0px 6px #00000029;
+	border: 1px solid #dfdbdb;
+	padding: 10px;
+}
+.calculate-amount-popup-crossBtn {
+	background: transparent;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.calculate-amount-popup-main {
+	padding: 15px 20px;
+}
+.calculate-amount-popup-main-heading {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+.calculate-amount-popup-main-row-heading {
+	font-weight: 400;
+	font-size: 15px;
+	padding: 5px 0;
+	margin-top: 20px;
+}
+.calculate-amount-popup-main-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	width: 100%;
+	margin-top: 10px;
+}
+.calculate-amount-popup-main-row-input {
+	background-color: var(--inputBg);
+	border: 1px solid var(--border);
+	padding: 0 5px;
+}
+.calculate-amount-popup-main-row-input:focus {
+	outline: none;
+	border: 2px solid var(--formActive);
+}
+.input-1 {
+	width: 100%;
+	height: 30px;
+}
+.input-2 {
+	width: 100%;
+	margin: 10px 0;
+	height: 30px;
+}
+.row-conatiner {
+	width: 100%;
+}
+.input-3,
+.input-4,
+.input-5 {
+	height: 30px;
+	width: 100%;
+	margin-top: 10px;
+}
+.calculate-amount-popup-main-checkbox {
+	margin-top: 20px;
+}
+#salesCheckBox {
+	display: none;
+}
+
+.calculate-amount-popup-main-checkbox-row {
+	display: flex;
+	align-items: center;
+}
+.checkbox-styled {
+	border: 1px solid var(--border);
+	border-radius: 2px;
+	transition: all 0.3s;
+	padding: 2px;
+	margin-right: 10px;
+	color: #fff;
+}
+.checkbox-styled i {
+	opacity: 0;
+	transition: all 0.3s;
+}
+#salesCheckBox:checked ~ .checkbox-styled {
+	background-color: #202340;
+}
+#salesCheckBox:checked ~ .checkbox-styled > i {
+	opacity: 1;
+}
+.calculate-amount-popup-main-buttons {
+	float: right;
+	margin-top: 20px;
+}
+.calculate-amount-popup-main-buttons button {
+	padding: 8px 15px;
+	transition: all 0.3s ease;
+}
+.calculate-amount-popup-main-buttons button:hover {
+	transform: translateY(-5px);
+}
+.cancel-button {
+	border: 2px solid var(--primary);
+	color: var(--primary);
+}
+.cancel-button:hover {
+	background: var(--primary);
+	color: #fff;
+}
+.save-button {
+	background: var(--primary);
+	border: 2px solid var(--primary);
+	color: #fff;
+	margin-left: 10px;
+}
+
+@media (min-width: 300px) {
+	.calculate-amount {
+		height: 220vh;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.navbar__left {
+		margin-left: 65px;
+	}
+	.calculate-amount {
+		height: 126vh;
+	}
+
+	.calculate-amount-popup {
+		height: 100%;
+		width: 94%;
+	}
+	.calculate-amount-popup-main-heading {
+		font-size: 22px;
+		font-weight: 400;
+	}
+	.calculate-amount-popup-main-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.input-1 {
+		width: 20%;
+	}
+	.input-2 {
+		width: 60%;
+		margin: 0 30px;
+	}
+	.row-conatiner {
+		width: 25%;
+		margin-right: 57px;
+	}
+	.input-3,
+	.input-4,
+	.input-5 {
+		height: 30px;
+		width: 100%;
+	}
+}

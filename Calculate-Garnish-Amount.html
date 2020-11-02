@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stylesheet.css">
+		<link rel="stylesheet" href="./css/popup.css" />
+		<script
+			src="https://kit.fontawesome.com/8328b4aac8.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Calculate Garnish Amount | Cogent</title>
+	</head>
+	<body>
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-th-large" aria-hidden="true"></i
+						></span>
+						<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-user" aria-hidden="true"></i
+						></span>
+						<span class="title">Person</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-university" aria-hidden="true"></i
+						></span>
+						<span class="title">Courts</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-square" aria-hidden="true"></i
+						></span>
+						<span class="title">Citations</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-object-ungroup" aria-hidden="true"></i
+						></span>
+						<span class="title">Violations</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-server" aria-hidden="true"></i
+						></span>
+						<span class="title">Documents</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-university" aria-hidden="true"></i
+						></span>
+						<span class="title">Banking</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-desktop" aria-hidden="true"></i
+						></span>
+						<span class="title">E-Hearing</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-usd" aria-hidden="true"></i
+						></span>
+						<span class="title">Payments</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-money" aria-hidden="true"></i
+						></span>
+						<span class="title">Money</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-menorah" aria-hidden="true"></i
+						></span>
+						<span class="title">Facilities</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-hand-holding-usd" aria-hidden="true"></i
+						></span>
+						<span class="title">Garnishment</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-chalkboard-teacher" aria-hidden="true"></i
+						></span>
+						<span class="title">E-Hearing</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-user-circle" aria-hidden="true"></i
+						></span>
+						<span class="title">Witness Management</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-tasks" aria-hidden="true"></i
+						></span>
+						<span class="title">Jury Management</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-bug" aria-hidden="true"></i
+						></span>
+						<span class="title">Reports</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div
+			class="toggle"
+			style="background-color: transparent; position: fixed"
+			onclick="toggleMenu()"
+		></div>
+		<nav class="nav-bar">
+			<div class="nav_icon">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="navbar__left">
+				<img src="assets/Cogent Logo.svg" alt="logo" />
+			</div>
+			<div class="navbar__right">
+				<a href="#" class="icon-items">
+					<i class="fa fa-search"></i>
+				</a>
+				<a href="#" class="icon-items">
+					<i class="fa fa-calendar-o"></i>
+				</a>
+				<a href="#" class="icon-items">
+					<i class="fa fa-bell"></i>
+				</a>
+				<a href="#" class="user-info">
+					<h6 style="text-align: right">Sandra Johnson</h6>
+					<h6 style="text-align: right">Clerk</h6>
+				</a>
+				<a href="#" class="greencircle">
+					<i
+						class="fa fa-user"
+						style="color: black; background-color: lightgreen"
+					></i>
+				</a>
+			</div>
+		</nav>
+		<main class="main-container">
+			<div class="calculate-amount">
+				<div class="calculate-amount-popup">
+					<button class="calculate-amount-popup-crossBtn">
+						<img
+							src="./assets/x.svg"
+							class="calculate-amount-popup-crossBtn-img"
+							alt="cross-btn-img"
+						/>
+					</button>
+					<div class="calculate-amount-popup-main">
+						<h2 class="calculate-amount-popup-main-heading">
+							Calculate Garnished Amount
+						</h2>
+						<h4 class="calculate-amount-popup-main-row-heading" role="label">
+							Principal/Total
+						</h4>
+						<div class="calculate-amount-popup-main-row">
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-1"
+							/>
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-2"
+							/>
+						</div>
+						<h4 class="calculate-amount-popup-main-row-heading" role="label">
+							Intrest
+						</h4>
+						<div class="calculate-amount-popup-main-row">
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-1"
+							/>
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-2"
+							/>
+						</div>
+						<h4 class="calculate-amount-popup-main-row-heading" role="label">
+							Court Cost
+						</h4>
+						<div class="calculate-amount-popup-main-row">
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-1"
+							/>
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-2"
+							/>
+						</div>
+						<h4 class="calculate-amount-popup-main-row-heading" role="label">
+							Attorney Fees
+						</h4>
+						<div class="calculate-amount-popup-main-row">
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-1"
+							/>
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-2"
+							/>
+						</div>
+						<h4 class="calculate-amount-popup-main-row-heading" role="label">
+							Taxes
+						</h4>
+						<div class="calculate-amount-popup-main-row">
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-1"
+							/>
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-2"
+							/>
+						</div>
+						<h4 class="calculate-amount-popup-main-row-heading" role="label">
+							Child Support
+						</h4>
+						<div class="calculate-amount-popup-main-row">
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-1"
+							/>
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-2"
+							/>
+						</div>
+						<h4 class="calculate-amount-popup-main-row-heading" role="label">
+							Maintainance
+						</h4>
+						<div class="calculate-amount-popup-main-row">
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-1"
+							/>
+							<input
+								type="text"
+								class="calculate-amount-popup-main-row-input input-2"
+							/>
+						</div>
+						<div class="calculate-amount-popup-main-row">
+							<div class="row-conatiner">
+								<h4
+									class="calculate-amount-popup-main-row-heading"
+									role="label"
+								>
+									Sub Total
+								</h4>
+								<input
+									type="text"
+									class="calculate-amount-popup-main-row-input input-3"
+								/>
+							</div>
+							<div class="row-conatiner">
+								<h4
+									class="calculate-amount-popup-main-row-heading"
+									role="label"
+								>
+									Cost Due
+								</h4>
+								<input
+									type="text"
+									class="calculate-amount-popup-main-row-input input-4"
+								/>
+							</div>
+							<div class="row-conatiner">
+								<h4
+									class="calculate-amount-popup-main-row-heading"
+									role="label"
+								>
+									Total Due
+								</h4>
+								<input
+									type="text"
+									class="calculate-amount-popup-main-row-input input-5"
+								/>
+							</div>
+						</div>
+						<div class="calculate-amount-popup-main-checkbox">
+							<div class="calculate-amount-popup-main-checkbox-row">
+								<input
+									type="checkbox"
+									name="salesCheckBox"
+									id="salesCheckBox"
+								/>
+								<div class="checkbox-styled"><i class="fas fa-check"></i></div>
+								<label for="salesCheckBox"> Sales of property requested</label>
+							</div>
+						</div>
+						<div class="calculate-amount-popup-main-buttons">
+							<button class="cancel-button">Cancel</button>
+							<button class="save-button">Save</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="./js/script.js"></script>
+		<script src="./js/popup.js"></script>
+	</body>
+</html>

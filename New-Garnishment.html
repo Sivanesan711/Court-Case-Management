@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- fontawesome  -->
+		<script
+			src="https://kit.fontawesome.com/8328b4aac8.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- lcoal css -->
+		<link rel="stylesheet" href="./css/stylesheet.css" />
+
+		<title>New Garnishment | Cogent</title>
+	</head>
+	<body>
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-th-large" aria-hidden="true"></i
+						></span>
+						<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-user" aria-hidden="true"></i
+						></span>
+						<span class="title">Person</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-university" aria-hidden="true"></i
+						></span>
+						<span class="title">Courts</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-square" aria-hidden="true"></i
+						></span>
+						<span class="title">Citations</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-object-ungroup" aria-hidden="true"></i
+						></span>
+						<span class="title">Violations</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-server" aria-hidden="true"></i
+						></span>
+						<span class="title">Documents</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-university" aria-hidden="true"></i
+						></span>
+						<span class="title">Banking</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-desktop" aria-hidden="true"></i
+						></span>
+						<span class="title">E-Hearing</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-usd" aria-hidden="true"></i
+						></span>
+						<span class="title">Payments</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-money" aria-hidden="true"></i
+						></span>
+						<span class="title">Money</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-menorah" aria-hidden="true"></i
+						></span>
+						<span class="title">Facilities</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-hand-holding-usd" aria-hidden="true"></i
+						></span>
+						<span class="title">Garnishment</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-chalkboard-teacher" aria-hidden="true"></i
+						></span>
+						<span class="title">E-Hearing</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-user-circle" aria-hidden="true"></i
+						></span>
+						<span class="title">Witness Management</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-tasks" aria-hidden="true"></i
+						></span>
+						<span class="title">Jury Management</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"
+							><i class="fa fa-bug" aria-hidden="true"></i
+						></span>
+						<span class="title">Reports</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div
+			class="toggle"
+			style="background-color: transparent; position: fixed"
+			onclick="toggleMenu()"
+		></div>
+		<nav class="nav-bar">
+			<div class="nav_icon">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="navbar__left">
+				<img src="assets/Cogent Logo.svg" alt="logo" />
+			</div>
+			<div class="navbar__right">
+				<a href="#" class="icon-items">
+					<i class="fa fa-search"></i>
+				</a>
+				<a href="#" class="icon-items">
+					<i class="fa fa-calendar-o"></i>
+				</a>
+				<a href="#" class="icon-items">
+					<i class="fa fa-bell"></i>
+				</a>
+				<a href="#" class="user-info">
+					<h6 style="text-align: right">Sandra Johnson</h6>
+					<h6 style="text-align: right">Clerk</h6>
+				</a>
+				<a href="#" class="greencircle">
+					<i
+						class="fa fa-user"
+						style="color: black; background-color: lightgreen"
+					></i>
+				</a>
+			</div>
+		</nav>
+		<main class="main-container">
+			<div class="garnishment">
+				<div class="garnishment-address-bar">
+					<a href="">Home</a>
+					<i class="fas fa-chevron-right"></i>
+					<a href="">Garnishment</a>
+					<i class="fas fa-chevron-right"></i>
+					<a href="">New Garnishment</a>
+				</div>
+				<div class="garnishment-back">
+					<i class="fas fa-arrow-left"></i>
+					<h2>New Garnishment</h2>
+				</div>
+				<div
+					data-toggle="collapse"
+					href="#faqCollapse-1"
+					aria-expanded="false"
+					aria-controls="faqCollapse-1"
+					class="questions-text"
+				>
+					<button class="btn expand-faq-btn">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+					<h5>Details</h5>
+				</div>
+				<div class="answer-div collapse" id="faqCollapse-1">
+					<div class="garnishment-details-grid">
+						<div class="garnishment-grid-element">
+							<label for="textField1" class="element-label">Document ID</label>
+							<!-- <input -->
+							<!-- type="text" -->
+							<!-- name="textField" -->
+							<!-- id="textField1" -->
+							<!-- class="element" -->
+							<!-- placeholder="select" -->
+							<!-- /> Lorem ipsum dolor sit. -->
+
+							<select name="" class="element select-element">
+								<option value="0">lorem</option>
+								<option value="1">ipsum</option>
+								<option value="2">dolor</option>
+								<option value="3">sit</option>
+							</select>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField2" class="element-label"
+								>Document Type</label
+							>
+							<!-- <input -->
+							<!-- type="text" -->
+							<!-- name="textField2" -->
+							<!-- id="textField2" -->
+							<!-- class="element" -->
+							<!-- placeholder="select" -->
+							<!-- /> -->
+							<select name="" class="element select-element">
+								<option value="0">lorem</option>
+								<option value="1">ipsum</option>
+								<option value="2">dolor</option>
+								<option value="3">sit</option>
+							</select>
+						</div>
+						<div class="garnishment-grid-element"></div>
+						<div class="garnishment-grid-element"></div>
+						<div class="garnishment-grid-element">
+							<label for="textField3" class="element-label">Case ID</label>
+							<div>
+								<input
+									type="text"
+									name="textField3"
+									id="textField3"
+									class="element icon-field"
+								/>
+								<i class="fas fa-search field-icon"></i>
+							</div>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField4" class="element-label">Case Name</label>
+							<input
+								type="text"
+								name="textField4"
+								id="textField4"
+								class="element"
+							/>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField5" class="element-label">Total Due</label>
+							<input
+								type="text"
+								name="textField5"
+								id="textField5"
+								class="element"
+							/>
+						</div>
+						<div class="garnishment-grid-element"></div>
+						<div class="garnishment-grid-element">
+							<label for="textField6" class="element-label">Issued In</label>
+							<!-- <input -->
+							<!-- type="text" -->
+							<!-- name="textField6" -->
+							<!-- id="textField6" -->
+							<!-- placeholder="select 6" -->
+							<!-- class="element" -->
+							<!-- /> -->
+							<select name="" class="element select-element">
+								<option value="0">lorem</option>
+								<option value="1">ipsum</option>
+								<option value="2">dolor</option>
+								<option value="3">sit</option>
+							</select>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField7" class="element-label">Issued On</label>
+							<div>
+								<input
+									type="text"
+									name="textField7"
+									id="textField7"
+									class="element icon-field"
+									placeholder="dd-mm-yyyy"
+									onfocus="(this.type='date')"
+								/>
+								<i class="fas fa-calendar-week field-icon"></i>
+							</div>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField3" class="element-label">Time</label>
+							<div>
+								<input
+									type="text"
+									name="textField3"
+									id="textField3"
+									class="element icon-field"
+									placeholder="hh:mm"
+									onfocus="(this.type='time')"
+								/><i class="far fa-clock field-icon"></i>
+							</div>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField1" class="element-label">Issued To</label>
+							<input
+								type="text"
+								name="textField"
+								id="textField1"
+								placeholder="search7"
+								class="element"
+							/>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField1" class="element-label">Status</label>
+							<!-- <input -->
+							<!-- type="text" -->
+							<!-- name="textField" -->
+							<!-- id="textField1" -->
+							<!-- placeholder="select8" -->
+							<!-- class="element" -->
+							<!-- /> -->
+							<select name="" class="element select-element">
+								<option value="0">lorem</option>
+								<option value="1">ipsum</option>
+								<option value="2">dolor</option>
+								<option value="3">sit</option>
+							</select>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField1" class="element-label">Status On</label>
+							<div>
+								<input
+									type="text"
+									name="textField7"
+									id="textField7"
+									class="element icon-field"
+									placeholder="dd-mm-yyyy"
+									onfocus="(this.type='date')"
+								/>
+								<i class="fas fa-calendar-week field-icon"></i>
+							</div>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField8" class="element-label">Time</label>
+							<div>
+								<input
+									type="text"
+									name="textField8"
+									id="textField8"
+									class="element icon-field"
+									placeholder="hh:mm"
+									onfocus="(this.type='time')"
+								/><i class="far fa-clock field-icon"></i>
+							</div>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField1" class="element-label"
+								>Status Reason</label
+							>
+							<!-- <input -->
+							<!-- type="text" -->
+							<!-- name="textField" -->
+							<!-- id="textField1" -->
+							<!-- placeholder="select" -->
+							<!-- class="element" -->
+							<!-- /> -->
+							<select name="" class="element select-element">
+								<option value="0">lorem</option>
+								<option value="1">ipsum</option>
+								<option value="2">dolor</option>
+								<option value="3">sit</option>
+							</select>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField9" class="element-label">Judgement On</label>
+							<div>
+								<input
+									type="text"
+									name="textField9"
+									id="textField9"
+									class="element icon-field"
+									placeholder="dd-mm-yyyy"
+									onfocus="(this.type='date')"
+								/>
+								<i class="fas fa-calendar-week field-icon"></i>
+							</div>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField10" class="element-label">Ends On</label>
+							<div>
+								<input
+									type="text"
+									name="textField10"
+									id="textField10"
+									class="element icon-field"
+									placeholder="dd-mm-yyyy"
+									onfocus="(this.type='date')"
+								/>
+								<i class="fas fa-calendar-week field-icon"></i>
+							</div>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField11" class="element-label"
+								>Requested On</label
+							>
+							<div>
+								<input
+									type="text"
+									name="textField11"
+									id="textField11"
+									class="element icon-field"
+									placeholder="dd-mm-yyyy"
+									onfocus="(this.type='date')"
+								/>
+								<i class="fas fa-calendar-week field-icon"></i>
+							</div>
+						</div>
+						<div class="garnishment-grid-element">
+							<label for="textField12" class="element-label">Return days</label>
+							<input
+								type="text"
+								name="textField12"
+								id="textField12"
+								class="element"
+							/>
+						</div>
+					</div>
+					<div class="details-button-row">
+						<p>Last changed by Sandra Johnson, 28-06-2020 10-21AM</p>
+						<div>
+							<button class="details-cancel-btn">Cancel</button>
+							<button class="details-save-btn">Save</button>
+						</div>
+					</div>
+				</div>
+				<div
+					data-toggle="collapse"
+					href="#faqCollapse-1"
+					aria-expanded="false"
+					aria-controls="faqCollapse-1"
+					class="questions-text"
+				>
+					<button class="btn expand-faq-btn">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+					<h5>Personal Details</h5>
+				</div>
+				<div class="answer-div collapse" id="faqCollapse-1">
+					<div class="personal-details">
+						<div class="personal-details-row">
+							<div class="personal-details-field-one">
+								<label for="field1">Debtor Name</label>
+								<div>
+									<input
+										type="text"
+										name="field1"
+										id="field1"
+										class="personal-details-input input-icon"
+									/>
+									<i class="fas fa-search icon-input"></i>
+								</div>
+							</div>
+							<div class="personal-details-field-two">
+								<label for="field1">Address</label>
+								<input
+									type="text"
+									name="field1"
+									id="field1"
+									class="personal-details-input"
+								/>
+							</div>
+						</div>
+						<div class="personal-details-row">
+							<div class="personal-details-field-one">
+								<label for="field1">Garnishee Name</label>
+								<div>
+									<input
+										type="text"
+										name="field1"
+										id="field1"
+										class="personal-details-input input-icon"
+									/>
+									<i class="fas fa-search icon-input"></i>
+								</div>
+							</div>
+							<div class="personal-details-field-two">
+								<label for="field1">Address</label>
+								<input
+									type="text"
+									name="field1"
+									id="field1"
+									class="personal-details-input"
+								/>
+							</div>
+						</div>
+						<div class="personal-details-row">
+							<div class="personal-details-field-one">
+								<label for="field1">Requestor</label>
+								<div>
+									<input
+										type="text"
+										name="field1"
+										id="field1"
+										class="personal-details-input input-icon"
+									/>
+									<i class="fas fa-search icon-input"></i>
+								</div>
+							</div>
+							<div class="personal-details-field-two">
+								<label for="field1">Address</label>
+								<input
+									type="text"
+									name="field1"
+									id="field1"
+									class="personal-details-input"
+								/>
+							</div>
+						</div>
+						<div class="personal-details-row">
+							<div class="personal-details-field-one">
+								<label for="field1">Attorney</label>
+								<div>
+									<input
+										type="text"
+										name="field1"
+										id="field1"
+										class="personal-details-input input-icon"
+									/>
+									<i class="fas fa-search icon-input"></i>
+								</div>
+							</div>
+							<div class="personal-details-field-two">
+								<label for="field1">Address</label>
+								<input
+									type="text"
+									name="field1"
+									id="field1"
+									class="personal-details-input"
+								/>
+							</div>
+						</div>
+
+						<div class="details-button-row">
+							<p>Last changed by Sandra Johnson, 28-06-2020 10-21AM</p>
+							<div>
+								<button class="details-cancel-btn">Cancel</button>
+								<button class="details-save-btn">Save</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					data-toggle="collapse"
+					href="#faqCollapse-1"
+					aria-expanded="false"
+					aria-controls="faqCollapse-1"
+					class="questions-text"
+				>
+					<button class="btn expand-faq-btn">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+					<h5>Payout</h5>
+				</div>
+				<div class="answer-div collapse" id="faqCollapse-1">
+					<div class="payout">
+						<h4 class="payout-heading">Process Payouts to</h4>
+						<div class="payout-radio-container">
+							<div class="payout-radio-container-btn">
+								<input type="radio" name="radio" id="radioRequestor" />
+								<div class="radio-dummy one"></div>
+								<label for="radioRequestor">Requestor</label>
+							</div>
+							<div class="payout-radio-container-btn">
+								<input type="radio" name="radio" id="radioAttorney" />
+								<div class="radio-dummy two"></div>
+								<label for="radioAttorney">Attorney</label>
+							</div>
+						</div>
+						<div class="payout-input-container">
+							<div class="payout-input-container-row">
+								<div class="input-group-one">
+									<label for="payout-input-1">Register of Actions</label>
+									<div>
+										<input
+											type="text"
+											name="field1"
+											id="payout-input-1"
+											class="payout-input"
+										/>
+										<i class="fas fa-search payout-icon"></i>
+									</div>
+								</div>
+								<div class="input-group-two">
+									<label for="payout-input-1">Service Instructions</label>
+									<div>
+										<input
+											type="text"
+											name="field1"
+											id="payout-input-1"
+											class="payout-input"
+										/>
+										<i class="fas fa-search payout-icon"></i>
+									</div>
+								</div>
+							</div>
+							<div class="payout-input-container-row">
+								<div class="input-group-one">
+									<label for="payout-input-1">Last Payout On</label>
+									<div>
+										<input
+											type="text"
+											name="field1"
+											id="payout-input-1"
+											placeholder="dd-mm-yyyy"
+											class="payout-input"
+											onfocus="(this.type='date')"
+										/>
+										<i class="fas fa-calendar-week payout-icon"></i>
+									</div>
+								</div>
+								<div class="input-group-three">
+									<div class="input-group-three-sub">
+										<label for="payout-input-1">Interrogatories Field</label>
+										<div>
+											<input
+												type="text"
+												name="field1"
+												id="payout-input-1"
+												class="payout-input"
+											/>
+										</div>
+									</div>
+									<div class="input-group-three-sub">
+										<label for="payout-input-1">Exemptions Field</label>
+										<div>
+											<input
+												type="text"
+												name="field1"
+												id="payout-input-1"
+												class="payout-input"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="details-button-row">
+						<p>Last changed by Sandra Johnson, 28-06-2020 10-21AM</p>
+						<div>
+							<button class="details-cancel-btn">Cancel</button>
+							<button class="details-save-btn">Save</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="garnishment-button-row">
+				<button class="garnishment-cancel-btn">Cancel</button>
+				<button class="garnishment-save-btn">Save All</button>
+			</div>
+		</main>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
