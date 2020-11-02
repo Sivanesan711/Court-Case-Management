@@ -154,7 +154,7 @@
 				<i class="fa fa-bars"></i>
 			</div>
 			<div class="navbar__left">
-				<img src="assets/Cogent Logo.svg" alt="logo" />
+				<a href="index.html"><img src="assets/Cogent Logo.svg" alt="logo" /></a>
 			</div>
 			<div class="navbar__right">
 				<a href="#" class="icon-items">
@@ -181,13 +181,18 @@
 		<main class="main-container">
 			<div class="calculate-amount">
 				<div class="calculate-amount-popup">
-					<button class="calculate-amount-popup-crossBtn">
+					<button class="calculate-amount-popup-crossBtn" onclick="closecalc()">
 						<img
 							src="./assets/x.svg"
 							class="calculate-amount-popup-crossBtn-img"
 							alt="cross-btn-img"
 						/>
 					</button>
+					<script type="text/javascript">
+						function closecalc(){
+							location.replace("index.html");
+						}
+					</script>
 					<div class="calculate-amount-popup-main">
 						<h2 class="calculate-amount-popup-main-heading">
 							Calculate Garnished Amount
