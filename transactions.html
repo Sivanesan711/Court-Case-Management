@@ -223,7 +223,24 @@
                         <table class="table">
                             <thead class="table_head">
                                 <tr>
-                                    <th><input type="checkbox" name="check_all" id="check_all"></th>
+                                    <th><input type="checkbox" name="check_all" id="table_check_all" onchange="checkallcheckbox(event)" >
+                                    <script>
+                                        function checkallcheckbox(event){
+                                            var checkboxes = document.getElementsByClassName("table_check");
+                                            if(event.target.checked){
+                                                for(checkbox of checkboxes){
+                                                    checkbox.checked = true;
+                                                    checkbox.onchange();
+                                                }
+                                            } else {
+                                                for(checkbox of checkboxes){
+                                                    checkbox.checked = false;
+                                                    checkbox.onchange();
+                                                }
+                                            }
+                                            
+                                        }
+                                    </script></th>
                                     <th>Document Id</th>
                                     <th>Summary</th>
                                     <th>Debtor</th>
@@ -233,9 +250,19 @@
                                     <th>Actions</th>
                                 </tr>
                             </thead>
+                            <script>
+                                function toggleSubTable(event, id){
+                                    var ckbxes = document.getElementsByClassName("ckbx" + id);
+                                    for(ckbx of ckbxes){
+                                        ckbx.classList.toggle("hidden");
+                                    }
+                                    var row = document.getElementById("table_row" + id);
+                                    row.classList.toggle("active");
+                                }
+                            </script>
                             <tbody class="table_body">
-                                <tr class="table_row active">
-                                    <td><input type="checkbox" name="check" id="checkbox" checked></td>
+                                <tr id="table_row1" class="table_row">
+                                    <td><input type="checkbox" name="check" id="checkbox" class="table_check" onchange="toggleSubTable(event, 1)"></td>
                                     <td><a href="#">12-GARN-025</a></td>
                                     <td>20 August 2020 Paid Out</td>
                                     <td>Thomas Sawyer</td>
@@ -257,7 +284,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="table_row header">
+                                <tr class="subtable_row hidden ckbx1 header">
                                     <td></td>
                                     <td>Summary</td>
                                     <td>Payer/ Payee</td>
@@ -267,7 +294,7 @@
                                     <td>Balance</td>
                                     <td></td>
                                 </tr>
-                                <tr class="table_row">
+                                <tr class="subtable_row hidden ckbx1">
                                     <td></td>
                                     <td>Cost Fees</td>
                                     <td>Horace Rumpole</td>
@@ -277,7 +304,7 @@
                                     <td>499.70</td>
                                     <td></td>
                                 </tr>
-                                <tr class="table_row">
+                                <tr class="subtable_row hidden ckbx1">
                                     <td></td>
                                     <td>Payable</td>
                                     <td>Horace Rumpole</td>
@@ -288,8 +315,8 @@
                                     <td></td>
                                 </tr>
                                     
-                                <tr>
-                                    <td><input type="checkbox" name="check" id="checkbox"></td>
+                                <tr id="table_row2" class="table_row">
+                                    <td><input type="checkbox" name="check" id="checkbox" class="table_check" onchange="toggleSubTable(event, 2)"></td>
                                     <td><a href="#">12-GARN-032</a></td>
                                     <td>20 May 2020 Paid In</td>
                                     <td>Thomas Sawyer</td>
@@ -308,6 +335,37 @@
                                         </i>
                                     </div></td>
                                 </tr>
+                                <tr class="subtable_row hidden header ckbx2">
+                                    <td></td>
+                                    <td>Summary</td>
+                                    <td>Payer/ Payee</td>
+                                    <td>Amount In</td>
+                                    <td>Amount Out</td>
+                                    <td>Assessed</td>
+                                    <td>Balance</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="subtable_row hidden ckbx2">
+                                    <td></td>
+                                    <td>Cost Fees</td>
+                                    <td>Horace Rumpole</td>
+                                    <td>100.00</td>
+                                    <td>0.00</td>
+                                    <td>999.30</td>
+                                    <td>499.70</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="subtable_row hidden ckbx2">
+                                    <td></td>
+                                    <td>Payable</td>
+                                    <td>Horace Rumpole</td>
+                                    <td>50.00</td>
+                                    <td>0.00</td>
+                                    <td>0.00</td>
+                                    <td>12.00</td>
+                                    <td></td>
+                                </tr>
+                                
                             </tbody>
                         </table>    
                         
