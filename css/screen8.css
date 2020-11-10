@@ -10,8 +10,9 @@ main {
 }
 
 .main__container {
+    padding-left: 50px;
     display: flex;
-    flex:1;
+    flex-direction: column;
 }
 
 .active_text{
